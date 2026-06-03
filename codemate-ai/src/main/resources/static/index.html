@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMate AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <div class="logo">
+            <div class="logo-icon">🤖</div>
+            <h1>CodeMate <span>AI</span></h1>
+        </div>
+
+        <div class="right-buttons">
+<!--            <button class="top-btn">🌙 Dark</button>-->
+            <button class="top-btn">✨ AI Powered</button>
+        </div>
+
+    </div>
+</header>
+
+<section class="hero container">
+
+    <h2>Your <span>AI</span> Code Companion</h2>
+
+    <p>
+        Analyze code in any programming language with AI-powered insights.
+        Detect issues, understand complexity, improve code quality,
+        and receive actionable suggestions instantly.
+    </p>
+
+</section>
+
+<div class="container">
+
+    <!-- CODE BOX -->
+
+    <div class="card code-section">
+
+        <div class="section-header">
+            <div class="section-title">💻 Enter Your Code</div>
+
+            <select class="language-select">
+                <option>Auto Detect Language</option>
+            </select>
+        </div>
+
+        <textarea id="codeInput" placeholder="Paste your code here..."></textarea>
+
+        <div class="buttons">
+            <button class="analyze-btn">✨ Analyze Code</button>
+            <button class="clear-btn">🗑 Clear</button>
+        </div>
+
+    </div>
+
+    <!-- RESULT -->
+
+    <div class="card result-section">
+
+        <div class="result-top">
+            <h2>📊 Analysis Result</h2>
+            <div class="ready">● Ready to Analyze</div>
+        </div>
+
+        <div class="result-card">
+            <h3>🚀 Language</h3>
+            <p id="language">--</p>
+        </div>
+
+        <div class="result-card">
+            <h3>📖 Summary</h3>
+            <p id="summary">--</p>
+        </div>
+
+        <div class="result-card">
+            <h3>⚠️ Issues</h3>
+            <p id="issues">--</p>
+        </div>
+
+        <div class="result-card">
+            <h3>📏 Complexity</h3>
+            <p id="complexity">--</p>
+        </div>
+
+        <div class="result-card">
+            <h3>💡 Improvements</h3>
+            <p id="improvements">--</p>
+        </div>
+
+        <div class="result-card">
+            <h3>⭐ Code Quality Score</h3>
+            <div id="score" class="score">--</div>
+        </div>
+
+    </div>
+
+    <!-- FEATURES -->
+
+    <div class="features">
+
+        <div class="card feature">
+            <div class="icon">🌍</div>
+            <h3>Multi-Language Support</h3>
+            <p>
+                Supports Java, Python, JavaScript, C++, Go,
+                Rust, PHP and many more.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">🎯</div>
+            <h3>Detect & Fix Issues</h3>
+            <p>
+                Find bugs, vulnerabilities and code smells
+                instantly.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">💡</div>
+            <h3>Smart Suggestions</h3>
+            <p>
+                Receive practical recommendations to improve
+                readability and maintainability.
+            </p>
+        </div>
+
+        <div class="card feature">
+            <div class="icon">⚡</div>
+            <h3>Instant Analysis</h3>
+            <p>
+                Get detailed code analysis and quality scores
+                within seconds.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="card footer">
+
+        <h2>🚀 Built for Developers, Powered by AI</h2>
+
+        <p>
+            CodeMate AI helps developers understand,
+            review and improve code faster. Whether you're
+            a beginner or an experienced developer,
+            our AI provides actionable insights to write
+            better code with confidence.
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+    function clearCode(){
+    document.getElementById("codeInput").value="";
+    }
+</script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
