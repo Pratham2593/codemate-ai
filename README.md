@@ -22,7 +22,6 @@ CodeMate AI is an AI-powered code review platform that helps developers analyze,
 
 ### Analysis Result
 
-(Add Screenshot Here)
 
 ---
 
